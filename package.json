@@ -4,7 +4,9 @@
   "description": "Node Basics ",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "start-server": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/Joemokhtarali/NodeJS-Basics-Routing/issues"
   },
-  "homepage": "https://github.com/Joemokhtarali/NodeJS-Basics-Routing#readme"
+  "homepage": "https://github.com/Joemokhtarali/NodeJS-Basics-Routing#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
 }
