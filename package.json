@@ -1,0 +1,19 @@
+{
+  "name": "nodejs-basics-routing",
+  "version": "1.0.0",
+  "description": "Node Basics ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Joemokhtarali/NodeJS-Basics-Routing.git"
+  },
+  "author": "Mocha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Joemokhtarali/NodeJS-Basics-Routing/issues"
+  },
+  "homepage": "https://github.com/Joemokhtarali/NodeJS-Basics-Routing#readme"
+}
