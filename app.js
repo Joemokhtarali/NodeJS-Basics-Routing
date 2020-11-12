@@ -1,23 +1,20 @@
-const http = require('http')
+let http = require('http')
 
-const express = require('express')
+let express = require('express')
 
-const app = express()
+let app = express()
 
-app.use('/product', (req, res, next) => {
-    console.log('In another middle');
-    res.send('<h1>The Product page</h1>')
+app.use('/users', (req, res, next) => {
+    return res.send('<h1>Users Page</h1>')
 })
+
 
 app.use('/', (req, res, next) => {
-    console.log('In another middle');
-    res.send('<h1>Hello</h1>')
+    return res.send('<h1>Hello to my Express Page</h1>')
 })
 
-// const routes = require('../routes')
-
-// const server = http.createServer(app)
-
-// server.listen(3000);
 
 app.listen(3000)
+// const server = http.createServer(app)
+
+// server.listen(3000)
