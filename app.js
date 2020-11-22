@@ -1,13 +1,18 @@
-let http = require('http')
+const http = require('http')
+const express = require('express')
+const bodyParser = require('body-parser')
+const app = express()
 
-let express = require('express')
-
-let app = express()
+app.use(bodyParser.urlencoded({extended: false }))
 
 app.use('/users', (req, res, next) => {
-    return res.send('<h1>Users Page</h1>')
+    return res.send(`<form action="/user" method="POST"><input type="text" name="title"></input><button type="submit"></button></form>`)
 })
 
+app.post('/user', (req, res, next) => {
+    console.log(req.body)
+    return res.redirect('/')
+})
 
 app.use('/', (req, res, next) => {
     return res.send('<h1>Hello to my Express Page</h1>')
